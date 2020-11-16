@@ -1,18 +1,33 @@
 # Final Java Assignment
 
 Congratulations on making it through Java training!
-You have now hopefully learned all you need to write a robot program. 
-To assess your understanding of the topics mentioned and to consolidate your learning, we have created a final Java quiz/exercise.
+You have now hopefully learned all the concepts you need to code for the robot.
+To assess your understanding of the topics mentioned and to consolidate your learning, we have created a final assignment.
 
 In order to make this exercise as realistic as possible to prepare you for working on the robot in the future, we have provided you with a set of fake API classes for a hypothetical robot, in the packages `com.arctos6135.robot`, `com.arctos6135.robot.sensors` and `com.arctos6135.robot.actuators`.
-Each class and method is documented in code with Javadoc comments, and you will also be provided with the generated Javadoc webpages in a zip.
-
-Note that because you have not yet learned how to use jar libraries, you should first download this repository as a zip, unzip it, and then open it in Visual Studio code and do all the work directly in the project to get the full benefits of IntelliSense.
 
 You will need to demonstrate your knowledge of Java concepts and the ability to make use of API classes with the help of documentation to complete this quiz.
-Of course, just like real life, it will be open-book; you can use any resource you want. 
+Just like in real life, you can use any resources you want, so make use of those Googling skills!
 
 **Note: Since the provided classes are part of the "API", you should assume that they *cannot* be changed. In real life, they will be sealed away in a Jar file and be read-only.**
+
+## Setup
+
+Click on the green "Code" button in the top-right corner of the GitHub page.
+In it, select "Download ZIP", then extract the zip and open the extracted folder with VS Code.
+That's all the setup you need for now!
+
+## Documentation
+
+To simulate a real environment, every class and package in the "API" provided has complete Javadocs.
+They should be picked up by the autocompleter if you have VS Code set up properly.
+
+If you want to view the full documentation, you can build it yourself.
+On Windows, double click on `mkdoc.bat`. On Mac/Linux, run `sh mkdoc.sh`.
+This will generate the full API documentation in the `docs` directory.
+To view it, double click on `index.html` in `docs` to open it in a browser.
+
+## Your Task
 
 Your mission, should you choose to accept it, is to:
 ### 1. Implement the `com.arctos6135.robot.Robot` class.
