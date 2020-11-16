@@ -1,5 +1,8 @@
 package com.arctos6135.robot;
 
+import com.arctos6135.robot.sensors.Encoder;
+import com.arctos6135.robot.sensors.Gyroscope;
+
 /**
  * A hypothetical robot capable of doing cool stuff!
  */
@@ -9,6 +12,9 @@ public abstract class AbstractRobot {
      * This method should return the distance the left wheel has travelled,
      * <strong>in centimeters</strong>.
      * 
+     * You can use an {@link Encoder} to obtain a wheel's distance. Just remember to
+     * convert inches to centimeters!
+     * 
      * @return The distance the left wheel travelled <strong>in centimeters</strong>
      */
     public abstract double getLeftWheelDistance();
@@ -16,6 +22,9 @@ public abstract class AbstractRobot {
     /**
      * This method should return the distance the right wheel has travelled,
      * <strong>in centimeters</strong>.
+     * 
+     * You can use an {@link Encoder} to obtain a wheel's distance. Just remember to
+     * convert inches to centimeters!
      * 
      * @return The distance the right wheel travelled <strong>in
      *         centimeters</strong>
@@ -25,6 +34,9 @@ public abstract class AbstractRobot {
     /**
      * This method should return the current heading (direction) of the robot,
      * <strong>in degrees in the range of [0, 360]</strong>.
+     * 
+     * You can use a {@link Gyroscope} to obtain the robot's current heading. Just
+     * remember to convert the continuous angle to be in the range of [0, 360]!
      * 
      * @return The current heading (direction) of the robot <strong>in degrees in
      *         the range of [0, 360]</strong>
