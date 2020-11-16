@@ -1,7 +1,7 @@
 package com.arctos6135.robot;
 
 /**
- * This exception is thrown by the {@link Task#doIt(Robot)} method to indicate that
+ * This exception is thrown by the {@link Task#doIt(AbstractRobot)} method to indicate that
  * the task has failed.
  */
 public class TaskExecutionException extends RuntimeException {
