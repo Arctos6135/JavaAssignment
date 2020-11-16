@@ -1,4 +1,4 @@
-package com.arctos6135.training.quiz.robot;
+package com.arctos6135.robot;
 
 /**
  * This exception is thrown to indicate that the robot's name was not set.

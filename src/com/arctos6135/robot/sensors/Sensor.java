@@ -1,4 +1,4 @@
-package com.arctos6135.training.quiz.robot.sensors;
+package com.arctos6135.robot.sensors;
 
 /**
  * This is the base class for all sensors.

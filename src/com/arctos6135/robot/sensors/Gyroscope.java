@@ -1,4 +1,4 @@
-package com.arctos6135.training.quiz.robot.sensors;
+package com.arctos6135.robot.sensors;
 
 /**
  * A gyroscope is a sensor that measures rotation.

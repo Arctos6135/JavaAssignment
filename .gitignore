@@ -1,4 +1,4 @@
 *.class
 .vscode
 docs
-
+/bin/

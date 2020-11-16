@@ -1,4 +1,4 @@
-package com.arctos6135.training.quiz.robot;
+package com.arctos6135.robot;
 
 /**
  * A hypothetical robot capable of doing cool stuff!

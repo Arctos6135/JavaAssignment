@@ -1,4 +1,4 @@
-package com.arctos6135.training.quiz.robot.actuators;
+package com.arctos6135.robot.actuators;
 
 /**
  * Represents a motor.

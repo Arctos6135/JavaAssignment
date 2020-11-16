@@ -1,4 +1,4 @@
-package com.arctos6135.training.quiz.robot.sensors;
+package com.arctos6135.robot.sensors;
 
 /**
  * An encoder is a sensor that measures rotation of a shaft, which is then
