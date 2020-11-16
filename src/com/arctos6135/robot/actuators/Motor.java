@@ -8,7 +8,7 @@ package com.arctos6135.robot.actuators;
  * don't actually do anything and just print out stuff.</small>
  * </p>
  */
-public class Motor extends Actuator {
+public class Motor extends AbstractActuator {
 
     /**
      * Creates a new motor object on the specified port.
@@ -29,7 +29,7 @@ public class Motor extends Actuator {
      * @param speed The speed to set the motor to
      * @throws IllegalArgumentException If the speed is out of range
      */
-    public void setSpeed(double speed) {
+    public void setOutput(double speed) {
         if (speed < -1.0 || speed > 1.0) {
             throw new IllegalArgumentException("A speed of " + speed + " is out of range!");
         }

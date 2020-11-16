@@ -3,7 +3,7 @@ package com.arctos6135.robot;
 /**
  * A hypothetical robot capable of doing cool stuff!
  */
-public abstract class Robot {
+public abstract class AbstractRobot {
 
     /**
      * This method should return the distance the left wheel has travelled,

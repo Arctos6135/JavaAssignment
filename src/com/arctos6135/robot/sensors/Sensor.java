@@ -1,26 +1,16 @@
 package com.arctos6135.robot.sensors;
 
 /**
- * This is the base class for all sensors.
+ * Base interface for all sensors.
  * 
- * <p>
- * <small>Of course, this being a quiz and not an actual robot, the sensors
- * don't actually do anything and just return random values.</small>
- * </p>
+ * A sensor provides data about its environment. All sensors should have a
+ * method that provides the reading of the sensor.
  */
-public abstract class Sensor {
-
+public interface Sensor {
     /**
-     * The port this sensor is on.
-     */
-    protected int port;
-
-    /**
-     * Gets the port this sensor is on.
+     * Get the sensor reading.
      * 
-     * @return The port this sensor is on
+     * @return The sensor's reading
      */
-    public int getPort() {
-        return port;
-    }
+    public double getReading();
 }

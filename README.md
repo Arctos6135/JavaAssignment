@@ -27,17 +27,16 @@ On Windows, double click on `mkdoc.bat`. On Mac/Linux, run `sh mkdoc.sh`.
 This will generate the full API documentation in the `docs` directory.
 To view it, double click on `index.html` in `docs` to open it in a browser.
 
-## Your Task
+## Your Tasks
 
-Your mission, should you choose to accept it, is to:
-### 1. Implement the `com.arctos6135.robot.Robot` class.
+### 1. Make a concrete implementation of the `AbstractRobot` class
 
 Your implementation can have any name you want (although you should pretend that this is the actual robot code, so try to give it a good name).
 It should be located in the package `com.arctos6135.robot`.
 
 This would mean providing an implementation to `getLeftWheelDistance()`, `getRightWheelDistance()` and `getHeading()`.
-You can use the `com.arctos6135.robot.sensors.Encoder` class to obtain distance readings, and the `com.arctos6135.robot.sensors.Gyroscope` class to obtain heading (direction) readings.
-The encoders for the left and right wheels are on ports 2 and 3, respectively, and the gyroscope is on port 4.
+You should use the `com.arctos6135.robot.sensors.Encoder` class to obtain distance readings, and the `com.arctos6135.robot.sensors.Gyroscope` class to obtain heading (direction) readings.
+The encoders for the left and right wheels are on **ports 2 and 3**, respectively, and the gyroscope is on **port 4**.
 
 But there's a catch!
 `Encoder` returns distances in inches, but `getLeftWheelDistance()` and `getRightWheelDistance()` should return centimeters (2.54cm = 1in).

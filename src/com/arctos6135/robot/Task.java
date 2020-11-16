@@ -1,7 +1,7 @@
 package com.arctos6135.robot;
 
 /**
- * A task that a {@link Robot} can do.
+ * A task that a {@link AbstractRobot Robot} can do.
  */
 @FunctionalInterface
 public interface Task {
@@ -11,5 +11,5 @@ public interface Task {
      * 
      * @param robot The robot that is doing the task
      */
-    public void doIt(Robot robot);
+    public void doIt(AbstractRobot robot);
 }

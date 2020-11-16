@@ -8,7 +8,7 @@ package com.arctos6135.robot.sensors;
  * don't actually do anything and just return random values.</small>
  * </p>
  */
-public class Gyroscope extends Sensor {
+public class Gyroscope extends AbstractSensor {
 
     /**
      * Creates a new gyroscope object on the specified port.
@@ -31,7 +31,7 @@ public class Gyroscope extends Sensor {
      * 
      * @return The continuous heading of the robot <strong>in degrees</strong>
      */
-    public double getHeading() {
+    public double getReading() {
         return Math.random() * 100000 - 50000;
     }
 }

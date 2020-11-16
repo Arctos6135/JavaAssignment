@@ -9,7 +9,7 @@ package com.arctos6135.robot.sensors;
  * don't actually do anything and just return random values.</small>
  * </p>
  */
-public class Encoder extends Sensor {
+public class Encoder extends AbstractSensor {
 
     /**
      * Creates a new encoder object on the specified port.
@@ -25,7 +25,7 @@ public class Encoder extends Sensor {
      * 
      * @return The distance travelled <strong>in inches</strong>
      */
-    public double getDistance() {
+    public double getReading() {
         return Math.random() * 100000 - 50000;
     }
 }

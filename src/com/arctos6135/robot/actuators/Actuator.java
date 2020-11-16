@@ -1,26 +1,16 @@
 package com.arctos6135.robot.actuators;
 
 /**
- * This is the base class for all actuators.
+ * Base interface for all actuators.
  * 
- * <p>
- * <small>Of course, this being a quiz and not an actual robot, the actuators
- * don't actually do anything and just print out stuff.</small>
- * </p>
+ * An actuator is anything that moves, e.g. a motor. All actuators should have a
+ * method that sets its output.
  */
-public abstract class Actuator {
-
+public interface Actuator {
     /**
-     * The port this actuator is on.
-     */
-    protected int port;
-
-    /**
-     * Gets the port this actuator is on.
+     * Set the output of this actuator.
      * 
-     * @return The port this actuator is on
+     * @param output The amount of output
      */
-    public int getPort() {
-        return port;
-    }
+    public void setOutput(double output);
 }
