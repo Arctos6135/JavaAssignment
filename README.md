@@ -108,6 +108,10 @@ In the task, you should check the "state" variable of the robot, and:
 * If the robot is disabled, do nothing.
 * If the robot state is unknown, throw a `TaskExecutionException` with a helpful message.
 
+Note: You may notice that `Task`s can only take an `AbstractRobot` instead of your specific robot implementation, so you can't access the members you need directly.
+This is a mistake on my part (I would have used generics to correct it, however, I didn't want to complicate the API more).
+For now, assume that the object passed into `Task.doIt()` will always be an instance of your subclass, so you can cast it with `MyImpl impl = (MyImpl) abstractRobot;`. You may also add an `instanceof` check if you wish, but it is not necessary.
+
 ---
 
 When you're done, DM us the code in a zip for review.
